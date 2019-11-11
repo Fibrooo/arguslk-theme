@@ -59,3 +59,13 @@
         </div>
     </div>
 </div>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="<?php echo get_custom_header()->url; ?>" alt="">
+            </div>
+        </div>
+    </div>
+</header>

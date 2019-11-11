@@ -42,6 +42,13 @@ function arguslk_setup(){
     add_theme_support('custom-background', [
         'default-color' => '000000'
     ]);
+
+    add_theme_support('custom-header', [
+        'default-image' => get_template_directory_uri() . '/assets/images/background.jpg',
+        'width' => '2000',
+        'height' => '1200'
+    ]);
+
     register_nav_menus([
         'header_menu' => 'Меню в шапке',
         'footer_menu' => 'Меню в футере'
