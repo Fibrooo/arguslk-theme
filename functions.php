@@ -46,7 +46,7 @@ function arguslk_setup(){
     add_theme_support('custom-header', [
         'default-image' => get_template_directory_uri() . '/assets/images/background.jpg',
         'width' => '2000',
-        'height' => '1200'
+        'height' => '700'
     ]);
 
     register_nav_menus([

@@ -65,3 +65,20 @@ ul.page-numbers li > a {
 .widget_categories ul li:hover {
     background-color: #e8e8e8;
 }
+
+.header_wrapper {
+    position: relative;
+}
+.header_wrapper .header_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header_wrapper .header_content h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 54px;
+    text-align: center;
+    text-shadow: 0 0 4px rgba(0,0,0,.6);
+}

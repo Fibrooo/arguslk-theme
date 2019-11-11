@@ -12,8 +12,6 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <?php if(has_custom_logo()): the_custom_logo()?>
                 <?php else: ?>
@@ -64,7 +62,20 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img src="<?php echo get_custom_header()->url; ?>" alt="">
+                <?php if(is_front_page()): ?>
+                <div class="header_wrapper">
+                    <div class="background">
+                            <?php if(get_header_image()): ?>
+                                <img src="<?php header_image() ?>" alt="">
+                            <?php else: ?>
+                                <img src="<?php echo get_custom_header()->url; ?>" alt="">
+                            <?php endif; ?>
+                    </div>
+                    <div class="header_content">
+                        <h4><?php bloginfo('description') ?></h4>
+                    </div>
+                </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
